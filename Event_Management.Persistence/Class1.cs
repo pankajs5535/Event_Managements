@@ -1,7 +1,11 @@
 ﻿namespace Event_Management.Persistence
 {
-    public class Class1
+    public class Events
     {
+        public int Id { get; set; }
 
+        public string name { get; set; }
+
+        public  int NoOfEvents { get; set; }
     }
 }

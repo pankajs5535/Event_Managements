@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Msql\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\DELL\Downloads\Event_Managements_Database.sql" Link="Msql\Event_Managements_Database.sql" />
+  </ItemGroup>
+
 </Project>
