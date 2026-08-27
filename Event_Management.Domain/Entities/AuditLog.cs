@@ -5,7 +5,7 @@ namespace Event_Management.Persistence;
 
 public partial class AuditLog
 {
-    public long AuditId { get; set; }
+    public long AuditIds { get; set; }
 
     public string TableName { get; set; } = null!;
 
