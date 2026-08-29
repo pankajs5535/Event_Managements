@@ -19,7 +19,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\Event_Management.Application\Event_Management.Application.csproj" />
 	  <ProjectReference Include="..\Event_Management.Domain\Event_Management.Domain.csproj" />
 	</ItemGroup>
 
+ 
 </Project>
