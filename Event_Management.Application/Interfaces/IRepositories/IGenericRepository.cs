@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace Event_Management.Application.Interfaces.Repositories
+namespace Event_Management.Application.Interfaces.IRepositories
 {
     public interface IGenericRepository<T> where T : class
     {

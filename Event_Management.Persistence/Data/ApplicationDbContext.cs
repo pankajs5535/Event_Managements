@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using Event_Management.Persistence;
 using Microsoft.EntityFrameworkCore;
+using Event_Management.Domain.Entities;
+
 
 namespace Event_Management.Persistence.Data;
 
@@ -67,7 +69,6 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<VwRegistrationDetail> VwRegistrationDetails { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=Skylark;Database=Event_Managements;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

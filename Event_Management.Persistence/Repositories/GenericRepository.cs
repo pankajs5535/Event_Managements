@@ -1,11 +1,12 @@
-﻿using Event_Management.Application.Interfaces.Repositories;
+﻿using Event_Management.Application.Interfaces.IRepositories;
 using Event_Management.Persistence.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Event_Management.Persistence.Repositories
 {
-    public class GenericRepository<T> : IGenericRepository<T>
-        where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected readonly ApplicationDbContext _context;
         protected readonly DbSet<T> _dbSet;

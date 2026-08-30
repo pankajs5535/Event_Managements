@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Event_Management.Persistence;
+namespace Event_Management.Domain.Entities;
 
 public partial class Exhibitor
 {
@@ -12,7 +12,7 @@ public partial class Exhibitor
     public long EventId { get; set; }
 
     public string BoothNumber { get; set; } = null!;
-
+        
     public int? BoothSizeSqFt { get; set; }
 
     public long? ContactPersonId { get; set; }
@@ -27,3 +27,4 @@ public partial class Exhibitor
 
     public virtual Organization Organization { get; set; } = null!;
 }
+ 
